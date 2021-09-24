@@ -10,7 +10,7 @@
 			<div class="top_nav">
 				<ul class="nav_menu">
 					<li>
-						<i class="name">Смертин Илья Витальевич</i>
+						<i class="name">123 Илья Витальевич</i>
 					</li>
 					<li class="delimiter"></li>
 					<li class="element">

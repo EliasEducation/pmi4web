@@ -1,0 +1,28 @@
+body{ background-color: #ad7474; margin: 0;  }
+body *{ display: block; font-style: normal; }
+
+.wrapper{ box-shadow: rgba(0, 0, 0, 0.2) 0 0 15px; background-color: #fff; width: 90vw; min-height: 800px; margin: 0 auto; padding: 0 20px; }
+
+.name{ color: #9b9b9b; font-size: 30px; font-weight: 700; }
+
+.top_nav{ width: calc(90vw); position: sticky; top: 10px; margin: 0; }
+.top_nav .nav_menu{ display: flex; align-items: center; justify-content: flex-end; padding: 0; list-style: none; }
+.top_nav .nav_menu .element{
+	border-radius: 8px; border: 1px solid;
+	margin: 0 4px; padding: 8px;
+	color: #9b9b9b; font-size: 14px; font-weight: 700;
+	cursor: pointer;
+}
+.top_nav .nav_menu .element:last-child{ margin-right: 0px; }
+.top_nav .nav_menu .element:hover{ box-shadow: rgba(0, 0, 0, 0.2) 0 0 15px; background-color: #ad7474; color: white; }
+.top_nav .nav_menu .delimiter{ margin-left: auto; }
+
+.float_left{ float: left; width: 40%; height: 200px; }
+.float_right{ float: right; width: 40%; height: 200px; }
+
+.absolute_wrapper{position: relative; width: 100%; height: 400px; }
+.static{ position: static; }
+.static{ position: static; }
+.static{ position: static; }
+
+footer{ background-color: #fff; width: 90vw; height: 150px; margin: 0 auto; padding: 0 20px; }

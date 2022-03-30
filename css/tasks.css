@@ -1,0 +1,12 @@
+.title{ font-size: 25px; font-weight: 600; }
+
+.task_menu{ padding: 0; display: flex; align-items: center; gap: 18px; }
+.task_menu a{
+	border-radius: 16px; background-color: #62b769;
+	padding: 4px 8px;
+	min-height: 150px; min-width: 150px;
+	font-size: 16px; color: white; font-weight: 600; text-decoration: none;
+	display: flex; align-items: center; justify-content: center;
+}
+
+.task_menu a:hover{ text-decoration: underline; }

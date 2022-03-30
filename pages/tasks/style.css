@@ -1,0 +1,9 @@
+.task_wrapper{ margin: 20px 0; }
+
+.task_wrapper [data-action="count_sum"]{ width: 60px; height: 20px; }
+
+.inputs_wrapper{ display: flex; flex-direction: column; }
+
+.inputs_wrapper input:not([type="radio"]):not([type="checkbox"]){ margin: 5px 0; width: 200px; }
+.task_title{ font-size: 20px; font-weight: bold; }
+

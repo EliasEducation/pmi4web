@@ -1,0 +1,30 @@
+.slider_wrapper{ --active-slide-width: 180px; margin-top: 40px; display: flex; justify-content: center; position: relative; }
+.slider_wrapper .slider_view,
+.popup .slider_view{ box-shadow: rgba(0, 0, 0, 0.2) 0 0 15px; width: 600px; min-width: 600px; overflow: hidden; position: relative; }
+.slides{ width: calc(100% * 4); display: flex; justify-content: center; align-items: center; transition: 0.5s ease-in-out; }
+.slides .slide{ width: calc(100% / 4); display: inline; float: left; transition: 0.5s ease-in-out; }
+
+.slider_wrapper .prev,
+.slider_wrapper .next{ position: absolute; z-index: 10; }
+
+.slider_wrapper .next{ right: 0px; bottom: 50%; transform: translateY(+50%); }
+.slider_wrapper .prev{ left: 0px; bottom: 50%; transform: translateY(+50%); }
+
+.slider_wrapper .next .btn,
+.slider_wrapper .prev .btn{ position: relative; width: 40px; height: 40px; }
+.slider_wrapper .next .btn:after{ content: ""; border: 20px solid transparent; border-left: 20px solid #000; margin: 0; position: absolute; bottom: 0; }
+.slider_wrapper .prev .btn:after{ content: ""; border: 20px solid transparent; border-right: 20px solid #000; margin: 0; position: absolute; bottom: 0; }
+.slider_wrapper .nav{ width: 300px; display: flex; justify-content: space-around; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); }
+
+.slider_wrapper .nav .nav_item{ width: 20px; height: 20px; border-radius: 100%; background: black; opacity: 0.5; }
+.slider_wrapper .nav .nav_item.active{ background: #ad7474; opacity: 1;}
+
+.slider_wrapper .preview_slides{ width: 600px; display: flex; position: absolute; bottom: -150px; left: 50%; transform: translateX(-50%); }
+.slider_wrapper .preview_slides .slide{ max-width: 150px; max-height: 150px; opacity: 0.5; }
+.slider_wrapper .preview_slides .slide.active{ opacity: 1; border: 1px solid red; }
+
+.popup{ display: none; }
+.popup_background{ background: black; opacity: 0.5;  width: 100%; height: 100%;  position: fixed; top: 0; left: 0; z-index: 10000000; }
+.slide_content{ position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10000000; }
+.slide_content .inner_content{ height: 400px; }
+.popup .slider_view{ z-index: 10000000; }

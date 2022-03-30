@@ -3,35 +3,22 @@
 		<meta charset="utf-8">
 		<title>About me</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/slider.css">
+		<script
+				src="https://code.jquery.com/jquery-3.6.0.min.js"
+				integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+				crossorigin="anonymous">
+		</script>
 	</head>
 
 	<body>
 		<div class="wrapper">
-			<div class="top_nav">
-				<ul class="nav_menu">
-					<li>
-						<i class="name">123 Илья Витальевич</i>
-					</li>
-					<li class="delimiter"></li>
-					<li class="element">
-						<i class="element_content">Резюме</i>
-					</li>
-					<li class="element">
-						<i class="element_content">Портфолио</i>
-					</li>
-					<li class="element">
-						<i class="element_content">Проекты</i>
-					</li>
-					<li class="element">
-						<i class="element_content">Обо мне</i>
-					</li>
-					<li class="element">
-						<i class="element_content">Контакты</i>
-					</li>
-				</ul>
-				<hr>
-			</div>
+			<?
+			include ('template/header.php');
+			?>
+
+
 		</div>
 	</body>
-	<footer>123</footer>
+	<footer></footer>
 </html>

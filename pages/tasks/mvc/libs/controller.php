@@ -17,4 +17,12 @@ class Controller{
 		$this->view->render(strtolower(get_class($this)));
 	}
 
+	public function sendReq($response){
+		if($response->isOk) {
+			echo json_encode($response->message);
+		} else {
+			echo json_encode($response);
+		}
+	}
+
 }

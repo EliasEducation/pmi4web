@@ -13,9 +13,11 @@ class App{
 		if(file_exists($fileName)){
 			// подключили контроллер
 			require_once($fileName);
-			$controller = new $controllerName;
 
+			$controller = new $controllerName;
 			if(isset($url[1])){
+				header('Content-Type: application/json');
+
 				if(method_exists($controller, $url[1])){
 					$controller->{$url[1]}();
 				}else{
